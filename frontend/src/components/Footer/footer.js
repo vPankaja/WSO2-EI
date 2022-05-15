@@ -27,7 +27,7 @@ const Footer = () => {
            <ul className="info"> 
                 <li>
                     <span><i class="fas fa-map-marker-alt"></i></span>
-                    <span>34, Galle Road, Galleface</span>
+                    <span>No:34, Galle Road, Galleface</span>
                 </li>
                 <li>
                     <span><i class="fas fa-phone-alt"></i></span>
@@ -35,7 +35,7 @@ const Footer = () => {
                 </li>
                 <li>
                     <span><i class="fas fa-envelope"></i></span>
-                    <span>kingshotelsl@gmail.com</span>
+                    <span>carltonhotelsl@gmail.com</span>
                 </li>
            </ul>
                </div>

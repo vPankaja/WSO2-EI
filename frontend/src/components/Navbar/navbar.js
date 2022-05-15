@@ -25,8 +25,9 @@ const Navbar = (history) => {
       return (
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 ">
                   <div class="container-fluid">
+                        <center>
                         <a class="navbar-brand " href="/">
-                              <img src={logo} style={{ width: '100px', height: '40px' }}></img> CARLTON HOTEL</a>
+                              <img  src={logo} style={{ width: '100px', height: '40px' }}></img> CARLTON HOTEL</a></center>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                               <span class="navbar-toggler-icon"></span>
                         </button>
