@@ -1,5 +1,5 @@
 import  mongoose  from 'mongoose'
-import bcrypt from 'bcryptjs'
+import bcrypt from '../node_modules/bcryptjs/index.js'
 
 
 //User Database
