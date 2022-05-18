@@ -26,11 +26,11 @@ const SliderCarousel = () => {
                         <label for="s4" id="slide4"><img src={Room4} style={{ width: "100%", height: "100%" }} /></label>
                         <label for="s5" id="slide5"><img src={Room5} style={{ width: "100%", height: "100%" }} /></label>
 
-                        <label for="s1" id="slide1">dfsdfaf</label>
-                        <label for="s2" id="slide2">ssdfsdf</label>
-                        <label for="s3" id="slide3">sdsdsd</label>
-                        <label for="s4" id="slide4">sczczczc</label>
-                        <label for="s5" id="slide5">scsfsd</label>
+                        <label for="s1" id="slide1"/>
+                        <label for="s2" id="slide2"/>
+                        <label for="s3" id="slide3"/>
+                        <label for="s4" id="slide4"/>
+                        <label for="s5" id="slide5"/>
                   </section>
             </>
       )

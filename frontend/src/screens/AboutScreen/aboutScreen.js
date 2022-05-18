@@ -89,7 +89,7 @@ const AboutScreen = () => {
                                     <img src={max11} style={{ width: "100%", height: "50%" }} />
                                     <br></br><br></br>
                                     <h1>Rooms & Suites</h1>
-                                    <p>  01 Feb 2021 - 31 Dec 2021
+                                    <p>  01 Feb 2022 - 31 Dec 2022
                                           Book Early and Save with Flexibility
                                           Book in advance and save up to 20% with complimentary date changes.</p>
 
@@ -102,7 +102,7 @@ const AboutScreen = () => {
                                     <img src={max8} style={{ width: "100%", height: "50%" }} />
                                     <br></br><br></br>
                                     <h1>Rooms & Suites</h1>
-                                    <p>Suite Celebrations
+                                    <p>Awurudu Celebrations
                                           Stay a little longer, see a little more!
                                           From LKR 31,932.80 Average Per Night
                                           View Details</p>
