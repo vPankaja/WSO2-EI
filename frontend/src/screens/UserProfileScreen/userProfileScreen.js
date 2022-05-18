@@ -27,6 +27,9 @@ const UserProfile = () => {
                                           <div className="row">
 
                                                 <h1>Name : {user.name}</h1>
+                                                <h1>NIC : {user.nicNo}</h1>
+                                                <h1>Gender : {user.gender}</h1>
+                                                <h1>contact No : {user.contactNo}</h1>
                                                 <h1>Email : {user.email}</h1>
                                           </div>
                                     </TabPane>
