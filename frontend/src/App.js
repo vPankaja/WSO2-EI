@@ -10,6 +10,12 @@ import Footer from './components/Footer/footer';
 import RoomsScreen from './screens/RoomScreen/roomsScreen';
 import AboutScreen from './screens/AboutScreen/aboutScreen';
 import UserProfile from './screens/UserProfileScreen/userProfileScreen';
+import ViewRoomScreen from './screens/ViewRoomScreen/viewRoomScreen';
+import CreateRoomScreen from './screens/CreateRoomScreen/createRoomScreen';
+import RoomUpdateScreen from './screens/RoomUpdateScreen/roomUpdateScreen';
+import RoomManagementScreen from './screens/RoomManagementScreen/roomManagementScreen';
+import RoomsListScreen from './screens/RoomsListScreen/roomsListScreen';
+import BookingReportScreen from './screens/BookingReportScreen/bookingReportScreen';
 
 const App = () => {
   return (
@@ -23,6 +29,12 @@ const App = () => {
         <Route path="/login" component={LoginScreen} />
         <Route path="/signup" component={SignupScreen} />
         <Route path="/profile" component={UserProfile} />
+        <Route path="/room/:id" component={ViewRoomScreen} />
+        <Route path="/admin/createRoom" component={CreateRoomScreen} />
+        <Route path="/update/:id" component={RoomUpdateScreen} />
+        <Route path="/roomManagement" component={RoomManagementScreen} />
+        <Route path="/listAllRooms" component={RoomsListScreen} />
+        <Route path="/bookingreport" component={BookingReportScreen} />
 
       </div>
       <Footer />
