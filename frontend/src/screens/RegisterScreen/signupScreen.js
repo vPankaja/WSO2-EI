@@ -13,6 +13,9 @@ const SignupScreen = ({ location, history }) => {
 
 
       const [name, setName] = useState('')
+      const [nicNo, setNIC] = useState('')
+      const [gender, setGender] = useState('')
+      const [contactNo, setContactNo] = useState('')
       const [email, setEmail] = useState('')
       const [password, setPassword] = useState('')
       const [confirmPassword, setConfirmPassword] = useState('')
@@ -38,7 +41,7 @@ const SignupScreen = ({ location, history }) => {
                   setMessage('Password do not match')
             }
             else {
-                  dispatch(register(name, email, password))
+                  dispatch(register(name, nicNo, gender, contactNo, email, password))
             }
       }
 
@@ -68,7 +71,7 @@ const SignupScreen = ({ location, history }) => {
                                                                   {loading && <Loader />}
                                                                   </div>
                                                                   <center>
-                                                
+                                                      	
                                                                   <h3 class="display-4">SIGN UP</h3>
                                                                   </center>
                                                                   <br/>
@@ -80,6 +83,35 @@ const SignupScreen = ({ location, history }) => {
                                                                               value={name}
                                                                               onChange={(e) => setName(e.target.value)} />
                                                                         </div>
+                                                                        <div class="form-group mb-3">
+                                                                              
+                                                                              <input id="Enter NIC" type="email" placeholder="Enter NIC No" required="" class="form-control rounded-pill border-0 shadow-sm px-4" 
+                                                                              value={nicNo}
+                                                                              onChange={(e) => setNIC(e.target.value)}/>
+                                                                        </div>
+
+                                                                        <div class="form-group mb-3">
+                                                                         <div class="row g-3">
+                                                                          <div class="col">
+
+                                                                              <select className="form-control rounded-pill border-0 shadow-sm px-4" value={gender} onChange={(e) => { setGender(e.target.value) }} >
+                                                                                    <option selected>Select Gender</option>
+                                                                                    <option value="Male">Male</option>
+                                                                                    <option value="Female">Female</option>
+                                                                                    <option value="Other">Other</option>
+                                                                              </select>
+                  
+                                                                          </div>
+
+                                                                          <div class="col">
+                                                                              
+                                                                              <input id="Enter Contact No" type="email" placeholder="Enter Contact No" required="" class="form-control rounded-pill border-0 shadow-sm px-4" 
+                                                                              value={contactNo}
+                                                                              onChange={(e) => setContactNo(e.target.value)}/>
+                                                                          </div>
+                                                                         </div>
+                                                                        </div>
+
                                                                         <div class="form-group mb-3">
                                                                               
                                                                               <input id="inputEmail" type="email" placeholder="Enter Email" required="" class="form-control rounded-pill border-0 shadow-sm px-4 text-primary" 
@@ -101,7 +133,7 @@ const SignupScreen = ({ location, history }) => {
                                                                         <br/>
                                                                         <button type="submit" class="btn btn-outline-warning btn-block text-uppercase mb-2 rounded-pill shadow-sm">Sign up</button>
 
-                                                                        
+                                                                        <br/><br/>
                                                                         <center><p class="text-muted mb-4">Create an Account using Social Links.</p></center>
 
                                                                         <div class="social-media">
