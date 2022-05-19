@@ -104,7 +104,7 @@ const BookingScreen = ({ match }) => {
                                                                         <br></br>
                                                                         <div class="vl">
                                                                               <div className="jk">
-                                                                                    <h6>Carlton Hotel Colombo</h6>
+                                                                                    <h6>Grand Hotel Colombo</h6>
                                                                                     <h1 >{rooms.name}</h1>
                                                                               </div>
 
@@ -122,6 +122,7 @@ const BookingScreen = ({ match }) => {
                                                                               <li>{rooms.features2}</li>
                                                                               <li>{rooms.features3}</li>
                                                                               <li>{rooms.features4}</li>
+                                                                              <li>{rooms.features5}</li>
                                                                         </ul>
                                                                         <h6>Bath & Per sonal Care</h6>
                                                                         <ul class="b">
@@ -154,7 +155,7 @@ const BookingScreen = ({ match }) => {
 
                                                                   <Col >
                                                                         <p className='km'>
-                                                                              <b>For reservation, please call (+94) 11 999 2000</b></p>
+                                                                              <b>For reservation, please call (+94) 11 357 1446</b></p>
                                                                         <ListGroup as="ul" align="center">
                                                                               <ListGroup.Item as="li" variant="secondary">
                                                                                     <b>Details</b>
@@ -163,9 +164,6 @@ const BookingScreen = ({ match }) => {
                                                                                     <p><b>Name</b> : {JSON.parse(localStorage.getItem('userInfo')).name}</p>
                                                                               </ListGroup.Item>
                                                                               <ListGroup.Item as="li" disabled><b>Max Count: </b> {rooms.maxcount}</ListGroup.Item>
-
-                                                                              <ListGroup.Item as="li" disabled><b>Need a Pre-Payment: </b> {rooms.features5}</ListGroup.Item>
-
                                                                               <ListGroup.Item as="li" disabled>
                                                                                     <b>Room Type: </b> {rooms.type}
                                                                               </ListGroup.Item>

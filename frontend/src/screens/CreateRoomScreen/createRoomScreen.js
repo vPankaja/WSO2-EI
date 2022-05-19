@@ -110,7 +110,7 @@ const CreateRoomScreen = ({ location, history }) => {
       return (
             <>
                   <FormContainer>
-                        <h1 align='center'>ADD ROOM</h1>
+                        <h1 align='center'>ADD RESTAURANTS</h1>
                         {loading && <Loader />}
                         {error && <Message variant='danger'>{error} </Message>}
                         {loading ? (
@@ -139,7 +139,7 @@ const CreateRoomScreen = ({ location, history }) => {
                                           ></Form.Control>
                                     </Form.Group>
 
-                                    <Form.Group controlId='text'>
+                                    <Form.Group controlId='number'>
                                           <Form.Label>Features1</Form.Label>
                                           <Form.Control required
                                                 type='text'
@@ -169,7 +169,7 @@ const CreateRoomScreen = ({ location, history }) => {
                                           ></Form.Control>
                                     </Form.Group>
 
-                                    <Form.Group controlId='text'>
+                                    <Form.Group controlId='price'>
                                           <Form.Label>Features4</Form.Label>
                                           <Form.Control
                                                 type='text'
@@ -179,17 +179,17 @@ const CreateRoomScreen = ({ location, history }) => {
                                           ></Form.Control>
                                     </Form.Group>
 
-                                    <Form.Group controlId='text'>
-                                          <Form.Label>Need a Pre-Payment</Form.Label>
+                                    <Form.Group controlId='description'>
+                                          <Form.Label>Features5</Form.Label>
                                           <Form.Control
                                                 type='text'
-                                                placeholder='Enter Yes or No'
+                                                placeholder='Enter features 5'
                                                 value={features5}
                                                 onChange={(e) => setFeatures5(e.target.value)}
                                           ></Form.Control>
                                     </Form.Group>
                                     <Form.Group controlId='description'>
-                                          <Form.Label>Rent Per Day</Form.Label>
+                                          <Form.Label>Rent per day</Form.Label>
                                           <Form.Control
                                                 type='price'
                                                 placeholder='Enter price'
@@ -198,16 +198,16 @@ const CreateRoomScreen = ({ location, history }) => {
                                           ></Form.Control>
                                     </Form.Group>
                                     <Form.Group controlId='description'>
-                                          <Form.Label>Room Type</Form.Label>
+                                          <Form.Label>Type</Form.Label>
                                           <Form.Control
                                                 type='text'
-                                                placeholder='Enter room type (Deluxe or Non-Deluxe)'
+                                                placeholder='Enter room type'
                                                 value={type}
                                                 onChange={(e) => setType(e.target.value)}
                                           ></Form.Control>
                                     </Form.Group>
                                     <Form.Group controlId='description'>
-                                          <Form.Label>Room Descrition</Form.Label>
+                                          <Form.Label>Descrition</Form.Label>
                                           <Form.Control
                                                 type='text'
                                                 placeholder='Enter room description'

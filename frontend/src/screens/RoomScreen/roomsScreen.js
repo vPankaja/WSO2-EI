@@ -109,7 +109,7 @@ const RoomsScreen = () => {
                               <select className="form-control m-2" value={type} onChange={(e) => { filterByType(e.target.value) }} >
 
                                     <option value="all">All</option>
-                                    <option value="Non-Deluxe">Non Deluxe</option>
+                                    <option value="Non-Deluxe">None Deluxe</option>
                                     <option value="deluxe">Deluxe</option>
 
                               </select>
