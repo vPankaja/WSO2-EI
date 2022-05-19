@@ -163,7 +163,9 @@ const BookingScreen = ({ match }) => {
                                                                                     <p><b>Name</b> : {JSON.parse(localStorage.getItem('userInfo')).name}</p>
                                                                               </ListGroup.Item>
                                                                               <ListGroup.Item as="li" disabled><b>Max Count: </b> {rooms.maxcount}</ListGroup.Item>
+
                                                                               <ListGroup.Item as="li" disabled><b>Pre-Payment Required: </b> {rooms.prepayreq}</ListGroup.Item>
+
                                                                               <ListGroup.Item as="li" disabled>
                                                                                     <b>Room Type: </b> {rooms.type}
                                                                               </ListGroup.Item>
