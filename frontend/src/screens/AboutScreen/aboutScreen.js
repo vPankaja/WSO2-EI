@@ -1,12 +1,9 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import AboutCarousel from '../../components/AboutCarousel/aboutCarousel'
-import max1 from '../AboutScreen/max1.jpg'
 import max2 from '../AboutScreen/max.jpg'
 import max3 from '../AboutScreen/x2.jpg'
 import max4 from '../AboutScreen/max4.jpg'
-import max5 from '../AboutScreen/max5.jpg'
-import max6 from '../AboutScreen/max6.jpg'
 import max8 from '../AboutScreen/max8.jpg'
 import max10 from '../AboutScreen/max10.jpg'
 import max11 from '../AboutScreen/max11.jpg'
@@ -84,51 +81,7 @@ const AboutScreen = () => {
                         </Row>
                         <br></br>
                         <hr></hr>
-                        <Row className='ki' >
 
-                              <center>
-                                    <h1>Unforgettable Events</h1>
-                                    <p>Design and enhance your event experiences with the very best of Shangri-La</p>
-                              </center>
-
-
-                              <Col className='bs ' >
-                                    <img src={max5} style={{ width: "100%", height: "50%" }} />
-                                    <br></br>
-                                    <br></br>
-                                    <h1>Meetings & Events</h1>
-
-                                    <p>Shangri-La Hotel, Colombo has the most extensive and versatile events space in Sri Lanka. Offers a range of flexible venues including the signature Shangri-La Ballroom, the largest pillar-less ballroom in</p>
-                                    <p>Shangri-La Hotel, Colombo has the most extensive and versatile events space in Sri Lanka. Offers a range of flexible venues including the signature Shangri-La Ballroom, the largest pillar-less ballroom in</p>
-                                    <p>Shangri-La Hotel, Colombo has the most extensive and versatile events space in Sri Lanka. Offers a range of flexible venues including the signature Shangri-La Ballroom, the largest pillar-less ballroom in</p>
-                                    <br></br>
-                                    <button className='btn btn-outline-warning'>Learn More</button>
-                              </Col>
-
-                              <Col className='bs'>
-                                    <img src={max6} style={{ width: "100%", height: "50%" }} />
-                                    <br></br>
-                                    <br></br>
-                                    <h1>Wedding Planning</h1>
-                                    <p>The city’s sought-after location for weddings, Shangri-La Hotel, Colombo offers unique and luxuriously styled venues with a dedicated team who will help make your special day a memorable one. Let us
-                                          kjhKHKHASKDHAKDAHKDAHDK
-                                          ADadad
-                                    </p>
-                                    <p>The city’s sought-after location for weddings, Shangri-La Hotel, Colombo offers unique and luxuriously styled venues with a dedicated team who will help make your special day a memorable one. Let us
-                                          kjhKHKHASKDHAKDAHKDAHDK
-                                          ADadad
-                                    </p>
-                                    <p>The city’s sought-after location for weddings, Shangri-La Hotel, Colombo offers unique and luxuriously styled venues with a dedicated team who will help make your special day a memorable one. Let us
-                                          kjhKHKHASKDHAKDAHKDAHDK
-                                          ADadad
-                                    </p>
-
-                                    <br></br>
-                                    <button className='btn btn-outline-warning'>Learn More</button>
-                              </Col>
-
-                        </Row>
-                        <hr></hr>
                         <Row className='ki'>
                               <center><h1>Offers</h1></center>
 
@@ -136,7 +89,7 @@ const AboutScreen = () => {
                                     <img src={max11} style={{ width: "100%", height: "50%" }} />
                                     <br></br><br></br>
                                     <h1>Rooms & Suites</h1>
-                                    <p>  01 Feb 2021 - 31 Dec 2021
+                                    <p>  01 Feb 2022 - 31 Dec 2022
                                           Book Early and Save with Flexibility
                                           Book in advance and save up to 20% with complimentary date changes.</p>
 
@@ -149,7 +102,7 @@ const AboutScreen = () => {
                                     <img src={max8} style={{ width: "100%", height: "50%" }} />
                                     <br></br><br></br>
                                     <h1>Rooms & Suites</h1>
-                                    <p>Suite Celebrations
+                                    <p>Awurudu Celebrations
                                           Stay a little longer, see a little more!
                                           From LKR 31,932.80 Average Per Night
                                           View Details</p>

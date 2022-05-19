@@ -13,7 +13,7 @@ const SignupScreen = ({ location, history }) => {
 
 
       const [name, setName] = useState('')
-      const [nicNo, setNIC] = useState('')
+      const [nic, setNIC] = useState('')
       const [gender, setGender] = useState('')
       const [contactNo, setContactNo] = useState('')
       const [email, setEmail] = useState('')
@@ -41,7 +41,7 @@ const SignupScreen = ({ location, history }) => {
                   setMessage('Password do not match')
             }
             else {
-                  dispatch(register(name, nicNo, gender, contactNo, email, password))
+                  dispatch(register(name, nic, gender, contactNo, email, password))
             }
       }
 
@@ -85,8 +85,8 @@ const SignupScreen = ({ location, history }) => {
                                                                         </div>
                                                                         <div class="form-group mb-3">
                                                                               
-                                                                              <input id="Enter NIC" type="email" placeholder="Enter NIC No" required="" class="form-control rounded-pill border-0 shadow-sm px-4" 
-                                                                              value={nicNo}
+                                                                              <input id="Enter NIC" type="text" placeholder="Enter NIC No" required="" class="form-control rounded-pill border-0 shadow-sm px-4" 
+                                                                              value={nic}
                                                                               onChange={(e) => setNIC(e.target.value)}/>
                                                                         </div>
 
@@ -105,7 +105,7 @@ const SignupScreen = ({ location, history }) => {
 
                                                                           <div class="col">
                                                                               
-                                                                              <input id="Enter Contact No" type="email" placeholder="Enter Contact No" required="" class="form-control rounded-pill border-0 shadow-sm px-4" 
+                                                                              <input id="Enter Contact No" type="text" placeholder="Enter Contact No" required="" class="form-control rounded-pill border-0 shadow-sm px-4" 
                                                                               value={contactNo}
                                                                               onChange={(e) => setContactNo(e.target.value)}/>
                                                                           </div>

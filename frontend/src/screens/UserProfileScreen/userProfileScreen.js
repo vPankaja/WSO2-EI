@@ -27,9 +27,9 @@ const UserProfile = () => {
                                           <div className="row">
 
                                                 <h1>Name : {user.name}</h1>
-                                                <h1>NIC : {user.nicNo}</h1>
+                                                <h1>NIC : {user.nic}</h1>
                                                 <h1>Gender : {user.gender}</h1>
-                                                <h1>contact No : {user.contactNo}</h1>
+                                                <h1>Contact No : {user.contactNo}</h1>
                                                 <h1>Email : {user.email}</h1>
                                           </div>
                                     </TabPane>
@@ -39,16 +39,10 @@ const UserProfile = () => {
                                                 <UserRoomBookimgs />
                                           </div>
                                     </TabPane>
-                                    {/* <TabPane tab="FOOD ORDERS" key="5">
-
-                                          <div className="row">
-                                                <UserFoodOrders />
-                                          </div>
-
-                                    </TabPane> */}
                               </Tabs>
                         </div>
                   </Container >
+                  <br/>
             </>
       )
 }

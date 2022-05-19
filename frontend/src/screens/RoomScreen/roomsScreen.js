@@ -169,6 +169,7 @@ const RoomsScreen = () => {
 
                         )}
                   </div>
+                  <br/>
 
 
             </>
