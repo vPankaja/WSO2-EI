@@ -10,7 +10,7 @@ const Footer = () => {
             <div className= "sec aboutus">
             <br/>
                 <h4>About Us</h4>
-                <p>A personal tropical sanctuary that is perfect for escaping the city, Kings Hotel overlooks the Indian Ocean in the heart of the business district. The hotel offers the finest accommodation in Colombo, an exciting new dining and social scene and the largest and extensive hotel conference and event facilities.</p>
+                <p>A personal tropical sanctuary that is perfect for escaping the city, Carlton Hotel overlooks the Indian Ocean in the heart of the business district. The hotel offers the finest accommodation in Colombo, an exciting new dining and social scene and the largest and extensive hotel conference and event facilities.</p>
                 
                 <ul className="sci">
                 <li><a href="#"><i className="fab fa-facebook" aria-hidden="true"></i></a></li>

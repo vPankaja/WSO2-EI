@@ -4,8 +4,6 @@ import { Tabs } from "antd";
 import { Button, Row, Col } from 'react-bootstrap'
 import UserRoomBookimgs from '../UserRoomBookings/userRoomBookings';
 
-// import UserFoodOrders from '../UserFoodOrders/UserFoodOrders';
-
 const { TabPane } = Tabs;
 
 const UserProfile = () => {

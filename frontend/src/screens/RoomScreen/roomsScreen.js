@@ -9,7 +9,7 @@ import { DatePicker, Space } from "antd";
 import 'antd/dist/antd.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import RoomsCarousel from '../../components/RoomsCarousel/roomsCarousel.js';
+import RoomsCarousel from '../../components/RoomsCarousel/roomsCarousel'
 import Message from '../../components/Message'
 import Loader from '../../components/Loader'
 
@@ -105,15 +105,6 @@ const RoomsScreen = () => {
                         <div className="col-md-4">
                               <RangePicker style={{ height: "38px", width: "98%" }} onChange={filterByDate} format='DD-MM-YYYY' className='m-2' />
                         </div>
-                        <div className="col-md-4">
-                              <select className="form-control m-2" value={type} onChange={(e) => { filterByType(e.target.value) }} >
-
-                                    <option value="all">All</option>
-                                    <option value="Non-Deluxe">None Deluxe</option>
-                                    <option value="deluxe">Deluxe</option>
-
-                              </select>
-                        </div>
 
                         <div className="col-md-4">
                               <input
@@ -124,6 +115,15 @@ const RoomsScreen = () => {
                                     onKeyUp={filterBySearch}
                                     onChange={(e) => { setsearchkey(e.target.value) }}
                               />
+                        </div>
+                        <div className="col-md-4">
+                              <select className="form-control m-2" value={type} onChange={(e) => { filterByType(e.target.value) }} >
+
+                                    <option value="all">All</option>
+                                    <option value="Non-Deluxe">Non Deluxe</option>
+                                    <option value="deluxe">Deluxe</option>
+
+                              </select>
                         </div>
                   </div>
 
