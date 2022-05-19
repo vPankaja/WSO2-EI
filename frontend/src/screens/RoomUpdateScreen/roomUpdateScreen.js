@@ -18,7 +18,7 @@ const RoomUpdateScreen = ({ match, history }) => {
       const [features2, setFeatures2] = useState("")
       const [features3, setFeatures3] = useState("")
       const [features4, setFeatures4] = useState("")
-      const [features5, setFeatures5] = useState("")
+      const [prepayreq, setPrepayreq] = useState("")
       const [rentperday, setRentperday] = useState()
       const [imageUrl1, setImageurl1] = useState("")
       const [imageUrl2, setImageurl2] = useState("")
@@ -53,7 +53,7 @@ const RoomUpdateScreen = ({ match, history }) => {
                         setFeatures2(rooms.features2)
                         setFeatures3(rooms.features3)
                         setFeatures4(rooms.features4)
-                        setFeatures5(rooms.features5)
+                        setPrepayreq(rooms.prepayreq)
                         setRentperday(rooms.rentperday)
                         setImageurl1(rooms.imageUrls[0])
                         setImageurl2(rooms.imageUrls[1])
@@ -67,7 +67,7 @@ const RoomUpdateScreen = ({ match, history }) => {
 
       const submitHandler = (e) => {
             e.preventDefault()
-            dispatch(updateRoom({ _id: roomId, name, maxcount, features1, features2, features3, features4, features5, rentperday, imageUrl1, imageUrl2, imageUrl3, type, description }))
+            dispatch(updateRoom({ _id: roomId, name, maxcount, features1, features2, features3, features4, prepayreq, rentperday, imageUrl1, imageUrl2, imageUrl3, type, description }))
       }
 
       const uploadFileHandler1 = async (e) => {
@@ -190,7 +190,7 @@ const RoomUpdateScreen = ({ match, history }) => {
                                                 ></Form.Control>
                                           </Form.Group>
 
-                                          <Form.Group controlId='price'>
+                                          <Form.Group controlId='text'>
                                                 <Form.Label>Features4</Form.Label>
                                                 <Form.Control
                                                       type='text'
@@ -201,15 +201,6 @@ const RoomUpdateScreen = ({ match, history }) => {
                                           </Form.Group>
 
                                           <Form.Group controlId='description'>
-                                                <Form.Label>Features5</Form.Label>
-                                                <Form.Control
-                                                      type='text'
-                                                      placeholder='Enter price'
-                                                      value={features5}
-                                                      onChange={(e) => setFeatures5(e.target.value)}
-                                                ></Form.Control>
-                                          </Form.Group>
-                                          <Form.Group controlId='description'>
                                                 <Form.Label>rentperday</Form.Label>
                                                 <Form.Control
                                                       type='price'
@@ -218,6 +209,18 @@ const RoomUpdateScreen = ({ match, history }) => {
                                                       onChange={(e) => setRentperday(e.target.value)}
                                                 ></Form.Control>
                                           </Form.Group>
+
+                                          
+                                    <Form.Group controlId='text'>
+                                          <Form.Label>Pre-PaymentRequest</Form.Label>
+                                          <Form.Control
+                                                type='text'
+                                                placeholder='Enter features 5'
+                                                value={prepayreq}
+                                                onChange={(e) => setPrepayreq(e.target.value)}
+                                          ></Form.Control>
+                                    </Form.Group>
+
                                           <Form.Group controlId='description'>
                                                 <Form.Label>type</Form.Label>
                                                 <Form.Control

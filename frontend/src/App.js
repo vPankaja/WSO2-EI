@@ -16,6 +16,7 @@ import RoomUpdateScreen from './screens/RoomUpdateScreen/roomUpdateScreen';
 import RoomManagementScreen from './screens/RoomManagementScreen/roomManagementScreen';
 import RoomsListScreen from './screens/RoomsListScreen/roomsListScreen';
 import BookingReportScreen from './screens/BookingReportScreen/bookingReportScreen';
+import BookingScreen from './screens/BookingScreen/bookingScreen'; 
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/signup" component={SignupScreen} />
         <Route path="/profile" component={UserProfile} />
         <Route path="/room/:id" component={ViewRoomScreen} />
+        <Route path="/roombook/:roomid/:fromdate/:todate" component={BookingScreen} />
         <Route path="/admin/createRoom" component={CreateRoomScreen} />
         <Route path="/update/:id" component={RoomUpdateScreen} />
         <Route path="/roomManagement" component={RoomManagementScreen} />

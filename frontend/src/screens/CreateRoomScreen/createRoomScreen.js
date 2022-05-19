@@ -19,7 +19,7 @@ const CreateRoomScreen = ({ location, history }) => {
       const [features2, setFeatures2] = useState("")
       const [features3, setFeatures3] = useState("")
       const [features4, setFeatures4] = useState("")
-      const [features5, setFeatures5] = useState("")
+      const [prepayreq, setPrepayreq] = useState("")
       const [rentperday, setRentperday] = useState()
       const [imageUrl1, setImageurl1] = useState("")
       const [imageUrl2, setImageurl2] = useState("")
@@ -48,7 +48,7 @@ const CreateRoomScreen = ({ location, history }) => {
 
       const submitHandler = (e) => {
             e.preventDefault()
-            dispatch(roomCreate(name, maxcount, features1, features2, features3, features4, features5, rentperday, imageUrl1, imageUrl2, imageUrl3, type, description))
+            dispatch(roomCreate(name, maxcount, features1, features2, features3, features4, prepayreq, rentperday, imageUrl1, imageUrl2, imageUrl3, type, description))
       }
 
       const uploadFileHandler1 = async (e) => {
@@ -169,7 +169,7 @@ const CreateRoomScreen = ({ location, history }) => {
                                           ></Form.Control>
                                     </Form.Group>
 
-                                    <Form.Group controlId='price'>
+                                    <Form.Group controlId='text'>
                                           <Form.Label>Features4</Form.Label>
                                           <Form.Control
                                                 type='text'
@@ -180,15 +180,6 @@ const CreateRoomScreen = ({ location, history }) => {
                                     </Form.Group>
 
                                     <Form.Group controlId='description'>
-                                          <Form.Label>Features5</Form.Label>
-                                          <Form.Control
-                                                type='text'
-                                                placeholder='Enter features 5'
-                                                value={features5}
-                                                onChange={(e) => setFeatures5(e.target.value)}
-                                          ></Form.Control>
-                                    </Form.Group>
-                                    <Form.Group controlId='description'>
                                           <Form.Label>Rent per day</Form.Label>
                                           <Form.Control
                                                 type='price'
@@ -197,11 +188,22 @@ const CreateRoomScreen = ({ location, history }) => {
                                                 onChange={(e) => setRentperday(e.target.value)}
                                           ></Form.Control>
                                     </Form.Group>
+
+                                    <Form.Group controlId='text'>
+                                          <Form.Label>Pre-Payment Required</Form.Label>
+                                          <Form.Control
+                                                type='text'
+                                                placeholder='Enter Yes or No'
+                                                value={prepayreq}
+                                                onChange={(e) => setPrepayreq(e.target.value)}
+                                          ></Form.Control>
+                                    </Form.Group>
+
                                     <Form.Group controlId='description'>
                                           <Form.Label>Type</Form.Label>
                                           <Form.Control
                                                 type='text'
-                                                placeholder='Enter room type'
+                                                placeholder='Enter room type (Deluxe or Non-Deluxe)'
                                                 value={type}
                                                 onChange={(e) => setType(e.target.value)}
                                           ></Form.Control>

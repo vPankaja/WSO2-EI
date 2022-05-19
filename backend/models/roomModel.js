@@ -25,12 +25,12 @@ const roomSchema = mongoose.Schema({
             type: String,
             required: true
       },
-      features5: {
-            type: String,
-            required: true
-      },
       rentperday: {
             type: Number,
+            required: true
+      },
+      prepayreq: {
+            type: String,
             required: true
       },
       imageUrls: [],
