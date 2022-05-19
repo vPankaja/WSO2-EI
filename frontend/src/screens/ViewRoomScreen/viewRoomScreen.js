@@ -137,6 +137,7 @@ const ViewRoomScreen = ({ match, history }) => {
                         )}
 
                   </div>
+                  <br/>
             </>
       )
 }

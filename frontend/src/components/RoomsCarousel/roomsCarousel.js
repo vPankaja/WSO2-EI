@@ -18,7 +18,7 @@ const RoomsCarousel = () => {
                               style={{ height: "500px", objectFit: "cover" }}
                         />
                         <Carousel.Caption>
-                              <h3>King</h3>
+                              <h3>Royal</h3>
                         </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item interval={2000}>
@@ -29,7 +29,7 @@ const RoomsCarousel = () => {
                               style={{ height: "500px", objectFit: "cover" }}
                         />
                         <Carousel.Caption>
-                              <h3>Queen</h3>
+                              <h3>King</h3>
                         </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item interval={2000}>
@@ -40,7 +40,7 @@ const RoomsCarousel = () => {
                               style={{ height: "500px", objectFit: "cover" }}
                         />
                         <Carousel.Caption>
-                              <h3>Family</h3>
+                              <h3>Queens</h3>
                         </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item interval={2000}>
