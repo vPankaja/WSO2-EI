@@ -9,7 +9,6 @@ import Nav1 from './components/Navbar/nav';
 import Footer from './components/Footer/footer';
 import RoomsScreen from './screens/RoomScreen/roomsScreen';
 import BookingScreen from './screens/BookingScreen/bookingScreen';
-import BookinReportScreen from './screens/bookingReportScreen/bookinReportScreen';
 import AboutScreen from './screens/AboutScreen/aboutScreen';
 import UserProfile from './screens/UserProfileScreen/userProfileScreen';
 import ViewRoomScreen from './screens/ViewRoomScreen/viewRoomScreen';
@@ -18,7 +17,6 @@ import RoomUpdateScreen from './screens/RoomUpdateScreen/roomUpdateScreen';
 import RoomManagementScreen from './screens/RoomManagementScreen/roomManagementScreen';
 import RoomsListScreen from './screens/RoomsListScreen/roomsListScreen';
 import BookingReportScreen from './screens/BookingReportScreen/bookingReportScreen';
-import BookingScreen from './screens/BookingScreen/bookingScreen'; 
 
 const App = () => {
   return (
@@ -30,12 +28,10 @@ const App = () => {
         <Route path="/about" component={AboutScreen} />
         <Route path="/rooms" component={RoomsScreen} />
         <Route path="/roombook/:roomid/:fromdate/:todate" component={BookingScreen} />
-        <Route path="/bookingreport" component={BookinReportScreen} />
         <Route path="/login" component={LoginScreen} />
         <Route path="/signup" component={SignupScreen} />
         <Route path="/profile" component={UserProfile} />
         <Route path="/room/:id" component={ViewRoomScreen} />
-        <Route path="/roombook/:roomid/:fromdate/:todate" component={BookingScreen} />
         <Route path="/admin/createRoom" component={CreateRoomScreen} />
         <Route path="/update/:id" component={RoomUpdateScreen} />
         <Route path="/roomManagement" component={RoomManagementScreen} />
