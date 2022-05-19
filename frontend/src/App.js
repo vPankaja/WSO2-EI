@@ -8,6 +8,8 @@ import SignupScreen from './screens/RegisterScreen/signupScreen';
 import Nav1 from './components/Navbar/nav';
 import Footer from './components/Footer/footer';
 import RoomsScreen from './screens/RoomScreen/roomsScreen';
+import BookingScreen from './screens/BookingScreen/bookingScreen';
+import BookinReportScreen from './screens/bookingReportScreen/bookinReportScreen';
 import AboutScreen from './screens/AboutScreen/aboutScreen';
 import UserProfile from './screens/UserProfileScreen/userProfileScreen';
 
@@ -20,6 +22,8 @@ const App = () => {
         <Route path="/" component={LandingScreen} exact />
         <Route path="/about" component={AboutScreen} />
         <Route path="/rooms" component={RoomsScreen} />
+        <Route path="/roombook/:roomid/:fromdate/:todate" component={BookingScreen} />
+        <Route path="/bookingreport" component={BookinReportScreen} />
         <Route path="/login" component={LoginScreen} />
         <Route path="/signup" component={SignupScreen} />
         <Route path="/profile" component={UserProfile} />
