@@ -52,8 +52,22 @@ const BookingScreen = ({ match }) => {
 
                   const result = await axios.post('/api/booking/bookroom', bookingDetails)
                   console.log(result)
-                  Swal.fire('Congrats', 'Your Room has booked succeessfully', 'success').then(result => {
-                        window.location.href = '/rooms'
+                  Swal.fire({
+                        title: 'Congrats',
+                        text: 'Your Room has booked succeessfully',
+                        icon: 'success',
+                        showCancelButton: true,
+                        confirmButtonText: 'OK',
+                        cancelButtonText: 'Book a Taxi?',
+                        reverseButtons: true 
+                  }).then(result => {
+                        if(result.isConfirmed) {
+                              window.location.href = '/rooms'
+                        }
+                        else if(result.dismiss) {
+                              window.location.href = 'https://gettransfer.com/en'
+                        }
+                        
                   })
 
             } catch (error) {
