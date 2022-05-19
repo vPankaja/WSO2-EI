@@ -24,7 +24,7 @@ const getRoomsById = asyncHandler(async (req, res) => {
                   features3: rooms.features3,
                   features4: rooms.features4,
                   rentperday: rooms.rentperday,
-                  prepayreq: rooms.prepayreq,
+                  features5: rooms.features5,
                   imageUrls: rooms.imageUrls,
                   currentBookings: rooms.currentBookings,
                   type: rooms.type,
@@ -53,10 +53,10 @@ const roomById = asyncHandler(async (req, res) => {
 const createRooms = asyncHandler(async (req, res) => {
 
       const { name,
-            rentperday, maxcount, features1, features2, features3, features4, prepayreq, description, type, imageUrl1, imageUrl2, imageUrl3 } = req.body
+            rentperday, maxcount, features1, features2, features3, features4, features5, description, type, imageUrl1, imageUrl2, imageUrl3 } = req.body
 
       const newroom = new Rooms({
-            name, maxcount, rentperday, features1, features2, features3, features4, prepayreq, type, imageUrls: [imageUrl1, imageUrl2, imageUrl3], description, currentbookings: []
+            name, maxcount, rentperday, features1, features2, features3, features4, features5, type, imageUrls: [imageUrl1, imageUrl2, imageUrl3], description, currentbookings: []
       })
       try {
             await newroom.save()
@@ -81,7 +81,7 @@ const deleteRoom = asyncHandler(async (req, res) => {
 const updateRoom = asyncHandler(async (req, res) => {
 
       const { name,
-            rentperday, maxcount, features1, features2, features3, features4, prepayreq, description, type, imageUrl1, imageUrl2, imageUrl3 } = req.body
+            rentperday, maxcount, features1, features2, features3, features4, features5, description, type, imageUrl1, imageUrl2, imageUrl3 } = req.body
 
       const rooms = await Rooms.findById(req.params.id)
 
@@ -93,7 +93,7 @@ const updateRoom = asyncHandler(async (req, res) => {
                   rooms.features2 = features2,
                   rooms.features3 = features3,
                   rooms.features4 = features4,
-                  rooms.prepayreq = prepayreq,
+                  rooms.features5 = features5,
                   rooms.description = description,
                   rooms.type = type,
                   rooms.imageUrls = [imageUrl1, imageUrl2, imageUrl3]

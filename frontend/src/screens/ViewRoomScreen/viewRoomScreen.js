@@ -114,7 +114,7 @@ const ViewRoomScreen = ({ match, history }) => {
                                                                         <b>Details</b>
                                                                   </ListGroup.Item>
                                                                   <ListGroup.Item as="li" disabled><b>Max Count: </b> {rooms.maxcount}</ListGroup.Item>
-                                                                  <ListGroup.Item as="li" disabled><b>Pre-Payment Required: </b> {rooms.prepayreq}</ListGroup.Item>
+                                                                  <ListGroup.Item as="li" disabled><b>Pre-Payment Required: </b> {rooms.features5}</ListGroup.Item>
                                                                   <ListGroup.Item as="li" disabled>
                                                                         <b>Room Type: </b> {rooms.type}
                                                                   </ListGroup.Item>
