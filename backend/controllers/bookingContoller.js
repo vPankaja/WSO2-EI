@@ -54,7 +54,7 @@ const bookRoom = asyncHandler(async (req, res) => {
 
         roomtemp.currentBookings.push({
           bookingid: booking._id,
-          fromdate: moment(fromdate).format('DD_MM_YYYY'),
+          fromdate: moment(fromdate).format('DD-MM-YYYY'),
           todate: moment(todate).format('DD-MM-YYYY'),
           userid: userid,
           status: booking.status,
