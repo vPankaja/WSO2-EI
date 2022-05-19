@@ -154,7 +154,7 @@ const RoomUpdateScreen = ({ match, history }) => {
                                                 <Form.Label>Max count</Form.Label>
                                                 <Form.Control
                                                       type='number'
-                                                      placeholder='Enter type'
+                                                      placeholder='Enter max count'
                                                       value={maxcount}
                                                       onChange={(e) => setMaxcount(e.target.value)}
                                                 ></Form.Control>
@@ -164,7 +164,7 @@ const RoomUpdateScreen = ({ match, history }) => {
                                                 <Form.Label>Features1</Form.Label>
                                                 <Form.Control
                                                       type='text'
-                                                      placeholder='Enter tables'
+                                                      placeholder='Enter features 1'
                                                       value={features1}
                                                       onChange={(e) => setFeatures1(e.target.value)}
                                                 ></Form.Control>
@@ -174,7 +174,7 @@ const RoomUpdateScreen = ({ match, history }) => {
                                                 <Form.Label>Features2</Form.Label>
                                                 <Form.Control
                                                       type='text'
-                                                      placeholder='Enter Phone No'
+                                                      placeholder='Enter features 2'
                                                       value={features2}
                                                       onChange={(e) => setFeatures2(e.target.value)}
                                                 ></Form.Control>
@@ -184,33 +184,33 @@ const RoomUpdateScreen = ({ match, history }) => {
                                                 <Form.Label>Features3</Form.Label>
                                                 <Form.Control
                                                       type='text'
-                                                      placeholder='Enter Email'
+                                                      placeholder='Enter features 3'
                                                       value={features3}
                                                       onChange={(e) => setFeatures3(e.target.value)}
                                                 ></Form.Control>
                                           </Form.Group>
 
-                                          <Form.Group controlId='price'>
+                                          <Form.Group controlId='text'>
                                                 <Form.Label>Features4</Form.Label>
                                                 <Form.Control
                                                       type='text'
-                                                      placeholder='Enter Location'
+                                                      placeholder='Enter features 4'
                                                       value={features4}
                                                       onChange={(e) => setFeatures4(e.target.value)}
                                                 ></Form.Control>
                                           </Form.Group>
 
-                                          <Form.Group controlId='description'>
-                                                <Form.Label>Features5</Form.Label>
+                                          <Form.Group controlId='text'>
+                                                <Form.Label>Need a Pre-Payment</Form.Label>
                                                 <Form.Control
                                                       type='text'
-                                                      placeholder='Enter price'
+                                                      placeholder='Enter Yes or No'
                                                       value={features5}
                                                       onChange={(e) => setFeatures5(e.target.value)}
                                                 ></Form.Control>
                                           </Form.Group>
                                           <Form.Group controlId='description'>
-                                                <Form.Label>rentperday</Form.Label>
+                                                <Form.Label>Rent Per Day</Form.Label>
                                                 <Form.Control
                                                       type='price'
                                                       placeholder='Enter price'
@@ -219,19 +219,19 @@ const RoomUpdateScreen = ({ match, history }) => {
                                                 ></Form.Control>
                                           </Form.Group>
                                           <Form.Group controlId='description'>
-                                                <Form.Label>type</Form.Label>
+                                                <Form.Label>Room Type</Form.Label>
                                                 <Form.Control
                                                       type='text'
-                                                      placeholder='Enter price'
+                                                      placeholder='Enter room type (Deluxe or Non-Deluxe)'
                                                       value={type}
                                                       onChange={(e) => setType(e.target.value)}
                                                 ></Form.Control>
                                           </Form.Group>
                                           <Form.Group controlId='description'>
-                                                <Form.Label>Descrition</Form.Label>
+                                                <Form.Label>Room Descrition</Form.Label>
                                                 <Form.Control
                                                       type='text'
-                                                      placeholder='Enter price'
+                                                      placeholder='Enter room description'
                                                       value={description}
                                                       onChange={(e) => setDescription(e.target.value)}
                                                 ></Form.Control>

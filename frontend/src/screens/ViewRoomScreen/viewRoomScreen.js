@@ -59,7 +59,7 @@ const ViewRoomScreen = ({ match, history }) => {
                                                             <br></br>
                                                             <div class="vl">
                                                                   <div className="jk">
-                                                                        <h6>Grand Hotel Colombo</h6>
+                                                                        <h6>Carlton Hotel Colombo</h6>
                                                                         <h1> {rooms.name}</h1>
                                                                   </div>
                                                             </div>
@@ -108,7 +108,7 @@ const ViewRoomScreen = ({ match, history }) => {
 
                                                       <Col >
                                                             <p className='km'>
-                                                                  <b>For reservation, please call (+94) 11 357 1446</b></p>
+                                                                  <b>For reservation, please call (+94) 11 999 2000</b></p>
                                                             <ListGroup as="ul" align="center">
                                                                   <ListGroup.Item as="li" variant="secondary">
                                                                         <b>Details</b>
