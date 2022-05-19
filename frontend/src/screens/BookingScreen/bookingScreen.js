@@ -104,7 +104,7 @@ const BookingScreen = ({ match }) => {
                                                                         <br></br>
                                                                         <div class="vl">
                                                                               <div className="jk">
-                                                                                    <h6>Grand Hotel Colombo</h6>
+                                                                                    <h6>Carlton Hotel Colombo</h6>
                                                                                     <h1 >{rooms.name}</h1>
                                                                               </div>
 
@@ -154,7 +154,7 @@ const BookingScreen = ({ match }) => {
 
                                                                   <Col >
                                                                         <p className='km'>
-                                                                              <b>For reservation, please call (+94) 11 357 1446</b></p>
+                                                                              <b>For reservation, please call (+94) 11 999 2000</b></p>
                                                                         <ListGroup as="ul" align="center">
                                                                               <ListGroup.Item as="li" variant="secondary">
                                                                                     <b>Details</b>
@@ -164,7 +164,7 @@ const BookingScreen = ({ match }) => {
                                                                               </ListGroup.Item>
                                                                               <ListGroup.Item as="li" disabled><b>Max Count: </b> {rooms.maxcount}</ListGroup.Item>
 
-                                                                              <ListGroup.Item as="li" disabled><b>Pre-Payment Required: </b> {rooms.features5}</ListGroup.Item>
+                                                                              <ListGroup.Item as="li" disabled><b>Need a Pre-Payment: </b> {rooms.features5}</ListGroup.Item>
 
                                                                               <ListGroup.Item as="li" disabled>
                                                                                     <b>Room Type: </b> {rooms.type}
