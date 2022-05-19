@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import AboutCarousel from '../../components/AboutCarousel/aboutCarousel'
 import max2 from '../AboutScreen/max.jpg'
@@ -9,12 +9,68 @@ import max10 from '../AboutScreen/max10.jpg'
 import max11 from '../AboutScreen/max11.jpg'
 import '../AboutScreen/about.css'
 import SilderCarousel from '../../components/SliderCarousel/sliderCarousel'
+import { Loader } from '@googlemaps/js-api-loader';
+import './map.css'
+
+const loader = new Loader({
+      apiKey: "AIzaSyDzGEUBQ-GAZAhGthGgyonKfzkhNwMOv1U",
+      version: "weekly",
+      libraries: ["places"]
+    })
+    
+    const mapOptions = {
+      center: {
+        lat: 6.924053,
+        lng: 79.845522
+      },
+      zoom: 14
+    }
+    
 
 
+// const loader = new Loader({
+//       apiKey: "AIzaSyA8df8uUeEggMCLWg0eAl1EzlElMsz4Dg4",
+//       version: "weekly",
+//       libraries: ["places"]
+//     });
+    
+//     const mapOptions = {
+//       center: {
+//         lat: 0,
+//         lng: 0
+//       },
+//       zoom: 4
+//     };
+
+   
 const AboutScreen = () => {
+
+      useEffect(() => {
+
+            loader
+              .load()
+              .then((google) => {
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions)
+        
+                var marker = new google.maps.Marker({
+                  position: {
+                    lat: 6.924053,
+                    lng: 79.845522
+                  },
+                  title: "Carlton Hotel"
+                });
+        
+                // To add the marker to the map, call setMap();
+                marker.setMap(map);
+              })
+              .catch(e => {
+                console.log(e.message)
+              })
+          }, []);
+          
       return (
             <>
-                  <AboutCarousel />
+                  <div id='map'/>
                   <Container >
                         <Row>
                               <Col md={6} style={{ marginLeft: '50px' }}>
