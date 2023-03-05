@@ -14,6 +14,7 @@ const bookRoom = asyncHandler(async (req, res) => {
   const { rooms, userid, fromdate, todate, totalDays, totalAmount, token } =
     req.body
 
+    
   try {
     const customer = await stripe.customers.create({
       email: token.email,
